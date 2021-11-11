@@ -1,0 +1,13 @@
+.explore-car {
+  min-height: 80vh;
+}
+.car-div {
+  box-shadow: 0 10px 40px -10px rgb(0 0 0 / 9%);
+  transition: 4s;
+}
+.car-img {
+  transition: all 0.5s;
+}
+.car-div:hover .car-img {
+  transform: scale(1.1);
+}

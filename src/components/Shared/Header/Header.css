@@ -1,0 +1,15 @@
+.logo {
+  font-weight: 700;
+  background-color: red;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+.nav-items {
+  font-size: 20px;
+}
+@media (max-width: 450px) {
+  .header {
+    width: 100%;
+    color: black;
+  }
+}

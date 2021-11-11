@@ -1,0 +1,9 @@
+.dashboard {
+  background-color: #3b5998 !important;
+  font-size: 15px !important;
+}
+.dash-name {
+  color: white !important;
+  font-weight: 600;
+  font-size: 25px !important;
+}
