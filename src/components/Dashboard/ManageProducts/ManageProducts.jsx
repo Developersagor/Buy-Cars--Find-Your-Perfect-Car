@@ -3,7 +3,7 @@ import "./ManageProducts.css";
 const ManageProducts = () => {
   const [allCars, setAllCars] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allCars")
+    fetch("https://boiling-sands-56408.herokuapp.com/allCars")
       .then((res) => res.json())
       .then((data) => setAllCars(data));
   }, []);
@@ -13,7 +13,7 @@ const ManageProducts = () => {
   const handleDeleteProduct = (id) => {
     const procedToDelet = window.confirm("Confirm Delet Order");
     if (procedToDelet) {
-      fetch(`http://localhost:5000/deleteProduct/${id}`, {
+      fetch(`https://boiling-sands-56408.herokuapp.com/deleteProduct/${id}`, {
         method: "DELETE",
         headers: { "Content-type": "application/json" },
       })

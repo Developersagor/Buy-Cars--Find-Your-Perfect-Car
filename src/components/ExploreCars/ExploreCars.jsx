@@ -6,7 +6,7 @@ import "./ExploreCars.css";
 const ExploreCars = () => {
   const [allCars, setAllCars] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allCars")
+    fetch("https://boiling-sands-56408.herokuapp.com/allCars")
       .then((res) => res.json())
       .then((data) => setAllCars(data));
   }, []);

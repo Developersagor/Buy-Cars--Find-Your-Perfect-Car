@@ -8,7 +8,7 @@ const Home = () => {
   const [allCars, setAllCars] = useState([]);
   const feturedCars = allCars.slice(0, 6);
   useEffect(() => {
-    fetch("http://localhost:5000/allCars")
+    fetch("https://boiling-sands-56408.herokuapp.com/allCars")
       .then((res) => res.json())
       .then((data) => setAllCars(data));
   }, []);

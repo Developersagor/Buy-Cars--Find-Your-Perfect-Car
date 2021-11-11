@@ -6,7 +6,7 @@ const ManageOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://boiling-sands-56408.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, []);
@@ -15,7 +15,7 @@ const ManageOrders = () => {
   const handleUpdate = (id) => {
     const procedToUpdate = window.confirm("Confirm Update Status");
     if (procedToUpdate) {
-      fetch(`http://localhost:5000/orders/${id}`, {
+      fetch(`https://boiling-sands-56408.herokuapp.com/orders/${id}`, {
         method: "PUT",
       })
         .then((res) => res.json())

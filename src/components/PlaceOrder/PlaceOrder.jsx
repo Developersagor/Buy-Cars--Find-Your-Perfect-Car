@@ -11,7 +11,7 @@ const PlaceOrder = () => {
   const { id } = useParams();
   const [car, setCar] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/allCars/${id}`)
+    fetch(`https://boiling-sands-56408.herokuapp.com/allCars/${id}`)
       .then((res) => res.json())
       .then((data) => setCar(data));
   }, [id]);
@@ -19,7 +19,7 @@ const PlaceOrder = () => {
   // post orders database
   const onSubmit = (data) => {
     data.status = "Pending";
-    fetch("http://localhost:5000/orders", {
+    fetch("https://boiling-sands-56408.herokuapp.com/orders", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

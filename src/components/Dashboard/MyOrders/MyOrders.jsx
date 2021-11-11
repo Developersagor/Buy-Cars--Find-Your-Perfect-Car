@@ -7,7 +7,7 @@ const MyOrders = () => {
   const [myOrders, setMyOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://boiling-sands-56408.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, []);
@@ -16,7 +16,7 @@ const MyOrders = () => {
   const handleDeleteProduct = (id) => {
     const procedToDelet = window.confirm("Confirm Delet Order");
     if (procedToDelet) {
-      fetch(`http://localhost:5000/deleteOrder/${id}`, {
+      fetch(`https://boiling-sands-56408.herokuapp.com/deleteOrder/${id}`, {
         method: "DELETE",
         headers: { "Content-type": "application/json" },
       })
