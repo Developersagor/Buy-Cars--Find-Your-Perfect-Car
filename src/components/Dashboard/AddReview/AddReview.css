@@ -1,0 +1,27 @@
+.review-div {
+  min-height: 80vh;
+}
+.add-review-form {
+  width: 50%;
+}
+.input-field {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .add-review-form {
+    width: 100% !important;
+  }
+  .input-field {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .add-review-form {
+    width: 100% !important;
+  }
+  .input-field {
+    width: 100% !important;
+  }
+}

@@ -1,3 +1,16 @@
 .make-admin {
   min-height: 80vh;
 }
+.make-admin-form {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .make-admin-form {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .make-admin-form {
+    width: 100%;
+  }
+}

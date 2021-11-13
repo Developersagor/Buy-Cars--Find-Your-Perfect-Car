@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Header from "../../Shared/Header/Header";
 import "./Home.css";
+import Review from "../Review/Review";
+import Service from "../Service/Service";
 
 const Home = () => {
   const [allCars, setAllCars] = useState([]);
@@ -16,10 +18,10 @@ const Home = () => {
     <div>
       <Header></Header>
       <Banner></Banner>
-      <div className="container mt-3">
-        <div className="text-center mt-5 mb-5">
-          <h1>Fetured Cars</h1>
-        </div>
+      <div className="container mt-5">
+        <h1 className="heading">
+          Fetured <span>Cars</span>
+        </h1>
         <div className="row">
           {feturedCars?.map((cars) => (
             <div key={cars._id} className="col-12 col-md-4 col-lg-4">
@@ -44,6 +46,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+      <Service></Service>
+      <Review></Review>
     </div>
   );
 };

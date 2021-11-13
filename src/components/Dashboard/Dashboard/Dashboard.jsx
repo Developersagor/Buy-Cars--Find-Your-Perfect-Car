@@ -4,7 +4,7 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import MyOrders from "../MyOrders/MyOrders";
 import Pay from "../Pay/Pay";
-import Review from "../Review/Review";
+import AddReview from "../AddReview/AddReview";
 import "./Dashboard.css";
 import AddProduct from "../../Add Product/AddProduct";
 import ManageOrders from "../ManageOrders/ManageOrders";
@@ -123,7 +123,7 @@ const Dashboard = () => {
               <MyOrders></MyOrders>
             </Route>
             <Route exact path={`${path}/review`}>
-              <Review></Review>
+              <AddReview></AddReview>
             </Route>
             <Route exact path={`${path}/addProduct`}>
               <AddProduct></AddProduct>

@@ -24,7 +24,7 @@ const AddProduct = () => {
       <div>
         <h1 className="mt-5 text-center text-danger">Please Add Product</h1>
         <div className=" p-2 d-flex justify-content-center align-items-center">
-          <div className="text-center w-25 form-container">
+          <div className="text-center add-product-form form-container">
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 {...register("title")}

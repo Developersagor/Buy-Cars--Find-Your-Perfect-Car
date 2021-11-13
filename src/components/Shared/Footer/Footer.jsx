@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import payment from "../../../images/Screenshot_3.png";
 
 const Footer = () => {
   return (
@@ -11,11 +10,11 @@ const Footer = () => {
             <div className="col-lg-4">
               <div>
                 <div className="w-50 mx-auto footer-content ">
-                  <h3>Support</h3> <hr />
-                  <h6>Contact</h6>
-                  <h6>Legal Notice</h6>
-                  <h6>Privacy Policy</h6>
-                  <h6>General Terms and Conditions</h6>
+                  <h3>SHOWROOM</h3> <hr />
+                  <h6>789 Main rd, Anytown, CA 12345 USA</h6>
+                  <h6>+1 800 789 0000</h6>
+                  <h6>example@gmail.com</h6>
+                  <h6>Mon – Fri : 09am to 06pm</h6>
                 </div>
               </div>
             </div>
@@ -31,9 +30,12 @@ const Footer = () => {
             </div>
             <div className="col-lg-4">
               <div className="w-50  mx-auto footer-content ">
-                <h3>Work With Us</h3> <hr />
-                <h6>Become a Supplier</h6>
-                <img className="w-75 " src={payment} alt="" />
+                <h3>INFORMATION</h3> <hr />
+                <h6>Site Map</h6>
+                <h6>My account</h6>
+                <h6>Discount</h6>
+                <h6>Return Policy</h6>
+                <h6></h6>
               </div>
             </div>
           </div>

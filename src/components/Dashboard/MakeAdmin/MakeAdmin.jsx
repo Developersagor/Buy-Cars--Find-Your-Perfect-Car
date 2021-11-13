@@ -20,10 +20,10 @@ const MakeAdmin = () => {
     <div className="make-admin">
       <div className="container text-center mt-5">
         <h2>Please Add Email For Make Admin</h2>
-        <div className="w-50 mx-auto mt-5">
-          <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="make-admin-form mx-auto mt-5">
+          <form className="w-100" onSubmit={handleSubmit(onSubmit)}>
             <input
-              className="input-field w-50"
+              className="input-field "
               name="email"
               placeholder="Email"
               type="email"
