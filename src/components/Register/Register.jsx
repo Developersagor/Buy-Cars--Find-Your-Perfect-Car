@@ -36,7 +36,7 @@ const Register = () => {
               <button className="sing-in-btn" onClick={signInUsingGoogle}>
                 Google
               </button>
-              <button className="sing-in-btn">Github</button>
+
               <h3 className="pb-5">
                 Already Have An Account <Link to="/login">Please Login</Link>
               </h3>

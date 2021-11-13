@@ -44,7 +44,7 @@ const Login = () => {
               <button className="sing-in-btn" onClick={GoogleLogin}>
                 Google
               </button>
-              <button className="sing-in-btn">Github</button>
+
               <h3 className="pb-5">
                 Don't Have An Account <Link to="/register">Create One</Link>
               </h3>
